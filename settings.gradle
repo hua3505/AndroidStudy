@@ -1,1 +1,1 @@
-include ':app', ':recyclerView'
+include ':app', ':recyclerView', ':imageMemoryOptimization'
