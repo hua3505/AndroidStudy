@@ -5,4 +5,7 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Notifaction.Text.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="Notifaction.Text.Content" parent="@android:style/TextAppearance.StatusBar.EventContent.Info" />
+
 </resources>
