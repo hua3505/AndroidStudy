@@ -1,21 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:orientation="horizontal" >
+    android:layout_height="match_parent" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon"
+        />
+    
+    <LinearLayout
+        android:layout_toRightOf="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发现新的自启应用"
-        android:textColor="@android:color/primary_t"
-        android:textAppearance="@style/Notifaction.Text.Title" />
+        android:layout_marginLeft="22dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="可释放容量345.6MB"
-        android:textAppearance="@style/Notifaction.Text.Content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现新的自启应用"
+            android:textAppearance="@style/Notifaction.Text.Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="招商银行 会在后台静默启动"
+            android:textAppearance="@style/Notifaction.Text.Content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="62dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:text="立即清理"
+        android:textSize="12sp"
+        android:textColor="#0090FF"
+        android:background="@drawable/notification_button_normal" />
 
     <!-- some more elements.. -->
-</LinearLayout>
+</RelativeLayout>

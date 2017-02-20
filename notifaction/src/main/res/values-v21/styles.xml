@@ -1,7 +1,0 @@
-<resources>
-
-
-    <style name="Notifaction.Text.Title" parent="@android:style/TextAppearance.Material.Notification.Title" />
-    <style name="Notifaction.Text.Content" parent="@android:style/TextAppearance.Material.Notification.Info" />
-
-</resources>
