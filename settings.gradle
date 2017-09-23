@@ -1,1 +1,1 @@
-include ':app', ':recyclerView', ':imageMemoryOptimization', ':imageloader', ':notifaction', ':view', ':activity'
+include ':app', ':recyclerView', ':imageMemoryOptimization', ':imageloader', ':notifaction', ':view', ':activity', ':anr'
