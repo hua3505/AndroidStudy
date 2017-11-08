@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MyHandlers {
     public void onClickFriend(View view) {
-        String name  = ((TextView) view).getText();
-        Toast.makeText((), "", Toast.LENGTH_SHORT).show();
+//        String name  = ((TextView) view).getText();
+//        Toast.makeText((), "", Toast.LENGTH_SHORT).show();
     }
 }
