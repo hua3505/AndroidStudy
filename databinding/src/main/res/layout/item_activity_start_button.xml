@@ -5,9 +5,13 @@
         <variable
             name="text"
             type="String" />
+        <variable
+            name="handlers"
+            type="com.gmail.huashadow.study.databinding.MainActivity.ButtonHandler" />
     </data>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@{text}"/>
+        android:text="@{text}"
+        android:onClick="@{(view) -> handlers.onClick(text)}"/>
 </layout>

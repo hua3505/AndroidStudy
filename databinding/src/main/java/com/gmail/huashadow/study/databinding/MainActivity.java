@@ -1,19 +1,23 @@
 package com.gmail.huashadow.study.databinding;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
 import com.gmail.huashadow.study.databinding.databinding.ItemActivityStartButtonBinding;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class MainActivity extends Activity {
 
-    private final Map<String, Class> mButtonInfos = new HashMap<String, Class>() {
+    private ButtonHandler mHandler = new ButtonHandler();
+
+    private final Map<String, Class> mButtonInfos = new LinkedHashMap<String, Class>() {
         {
             put("First Demo Activity", FirstDemoActivity.class);
+            put("Method Reference Activity", MethodReferenceActivity.class);
         }
     };
 
@@ -30,6 +34,16 @@ public class MainActivity extends Activity {
 //            ItemActivityStartButtonBinding buttonBinding = DataBindingUtil.inflate(getLayoutInflater(), R.layout.item_activity_start_button, container, true);
             ItemActivityStartButtonBinding buttonBinding = ItemActivityStartButtonBinding.inflate(getLayoutInflater(), container, true);
             buttonBinding.setText(buttonText);
+            buttonBinding.setHandlers(mHandler);
+        }
+    }
+
+    public class ButtonHandler {
+        public void onClick(String text) {
+            Class clazz = mButtonInfos.get(text);
+            if (clazz != null) {
+                startActivity(new Intent(MainActivity.this, clazz));
+            }
         }
     }
 }
