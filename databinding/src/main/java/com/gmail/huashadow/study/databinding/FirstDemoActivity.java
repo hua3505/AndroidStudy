@@ -1,12 +1,13 @@
 package com.gmail.huashadow.study.databinding;
 
+import android.app.Activity;
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.gmail.huashadow.study.databinding.databinding.ActivityFirstDemoBinding;
+import com.gmail.huashadow.study.databinding.viewmodel.User;
 
-public class FirstDemoActivity extends AppCompatActivity {
+public class FirstDemoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

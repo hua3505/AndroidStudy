@@ -1,4 +1,4 @@
-package com.gmail.huashadow.study.databinding;
+package com.gmail.huashadow.study.databinding.viewmodel;
 
 /**
  * @author WolfXu on 2017/11/6.
