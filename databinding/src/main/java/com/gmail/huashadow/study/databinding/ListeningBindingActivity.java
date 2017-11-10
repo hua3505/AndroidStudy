@@ -22,5 +22,9 @@ public class ListeningBindingActivity extends Activity {
         public void onCompletedChanged(boolean completed) {
 
         }
+
+        public boolean onLongClick() {
+            return true;
+        }
     }
 }

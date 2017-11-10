@@ -5,19 +5,33 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="presenter"
-            type="com.gmail.huashadow.study.databinding.ListeningBindingActivity.Presenter" />
+            type="com.gmail.huashadow.study.databinding.ListeningBindingActivity.Presenter"/>
     </data>
 
-    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:onCheckedChanged="@{(cb, isChecked) -> presenter.onCompletedChanged(isChecked)}" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onCheckedChanged="@{(cb, isChecked) -> presenter.onCompletedChanged(isChecked)}"/>
 
 
-    <!--Error:(14, 43) The callback android.widget.CompoundButton.OnCheckedChangeListener#onCheckedChanged
-    has 2 methods but the lambda defined has 1. It should have either 0 or equal number of parameters.-->
+        <!--Error:(14, 43) The callback android.widget.CompoundButton.OnCheckedChangeListener#onCheckedChanged
+        has 2 methods but the lambda defined has 1. It should have either 0 or equal number of parameters.-->
 
-    <!--<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-              <!--android:onCheckedChanged="@{(cb) -> presenter.onCompletedChanged(isChecked)}" />-->
+        <!--<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:onCheckedChanged="@{(cb) -> presenter.onCompletedChanged(isChecked)}" />-->
+
+        <!--返回值需要跟接口一致-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onLongClick="@{() -> presenter.onLongClick()}"/>
+    </LinearLayout>
 
 </layout>
