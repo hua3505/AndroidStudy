@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".MethodReferenceActivity">
         </activity>
+        <activity android:name=".ListeningBindingActivity">
+        </activity>
     </application>
 
 </manifest>
