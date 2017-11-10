@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".ListeningBindingActivity">
         </activity>
+        <activity android:name=".ImportsActivity">
+        </activity>
     </application>
 
 </manifest>

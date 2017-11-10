@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils" />
+        <import type="com.gmail.huashadow.study.databinding.viewmodel.User"/>
+        <variable
+            name="user"
+            type="User" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="少儿不宜"
+            android:visibility="@{user.isAdult ? android.view.View.VISIBLE : android.view.View.GONE}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{!android.text.TextUtils.isEmpty(user.firstName) ? user.firstName : user.lastName}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="少儿不宜"
+            android:visibility="@{user.isAdult ? View.VISIBLE : View.GONE}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{!TextUtils.isEmpty(user.firstName) ? user.firstName : user.lastName}"/>
+
+    </LinearLayout>
+
+</layout>
