@@ -15,9 +15,12 @@ public class FirstDemoActivity extends Activity {
         final ActivityFirstDemoBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_first_demo);
         User user = new User("Test", "User");
         binding.setUser(user);
+
+
         binding.getRoot().postDelayed(new Runnable() {
             @Override
             public void run() {
+                // 界面不会改变
                 binding.getUser().setFirstName("Hello");
             }
         }, 1000);
