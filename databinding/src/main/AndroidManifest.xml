@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".ImportsActivity">
         </activity>
+        <activity android:name=".IncludeActivity">
+        </activity>
     </application>
 
 </manifest>

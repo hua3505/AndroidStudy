@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="user0"
+            type="com.gmail.huashadow.study.databinding.viewmodel.User" />
+        <variable
+            name="user1"
+            type="com.gmail.huashadow.study.databinding.viewmodel.User" />
+    </data>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{user0.firstName}"/>
+
+</layout>
