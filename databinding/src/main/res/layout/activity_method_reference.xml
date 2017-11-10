@@ -6,8 +6,11 @@
 
     <data>
         <variable
+            name="count"
+            type="Integer" />
+        <variable
             name="handler"
-            type="com.gmail.huashadow.study.databinding.MyHandlers" />
+            type="com.gmail.huashadow.study.databinding.MethodReferenceActivity.MyHandlers" />
     </data>
 
     <LinearLayout
@@ -18,6 +21,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@{String.valueOf(count)}"
             android:onClick="@{handler::onClickFriend}"/>
 
     </LinearLayout>

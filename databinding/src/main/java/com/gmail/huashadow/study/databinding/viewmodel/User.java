@@ -5,8 +5,8 @@ package com.gmail.huashadow.study.databinding.viewmodel;
  */
 
 public class User {
-    private final String mFirstName;
-    private final String mLastName;
+    private String mFirstName;
+    private String mLastName;
 
     public User(String firstName, String lastName) {
         this.mFirstName = firstName;
@@ -19,5 +19,13 @@ public class User {
 
     public String getLastName() {
         return mLastName;
+    }
+
+    public void setFirstName(String firstName) {
+        mFirstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        mLastName = lastName;
     }
 }

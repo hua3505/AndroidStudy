@@ -12,8 +12,20 @@ public class FirstDemoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityFirstDemoBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_first_demo);
+        final ActivityFirstDemoBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_first_demo);
         User user = new User("Test", "User");
         binding.setUser(user);
+        binding.getRoot().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                binding.getUser().setFirstName("Hello");
+            }
+        }, 1000);
+        binding.getRoot().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                binding.setUser(new User("Hello", "World"));
+            }
+        }, 3000);
     }
 }
