@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.gmail.huashadow.study.databinding.databinding.ActivityDataObjectsBinding;
+import com.gmail.huashadow.study.databinding.viewmodel.ObservableFieldsUser;
 import com.gmail.huashadow.study.databinding.viewmodel.ObservableUser;
 import com.gmail.huashadow.study.databinding.viewmodel.ObservableUser2;
 
@@ -16,11 +17,13 @@ public class DataObjectsActivity extends Activity {
         final ActivityDataObjectsBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_data_objects);
         binding.setObservableUser(new ObservableUser("Stephen", "Curry"));
         binding.setObservableUser2(new ObservableUser2("Klay", "Thompson"));
+        binding.setUser3(new ObservableFieldsUser("Draymond", "Green"));
         binding.getRoot().postDelayed(new Runnable() {
             @Override
             public void run() {
                 binding.getObservableUser().setFirstName("MVP");
                 binding.getObservableUser2().setFirstName("Buddha");
+                binding.getUser3().firstName.set("Dreamer");
             }
         }, 2000);
     }

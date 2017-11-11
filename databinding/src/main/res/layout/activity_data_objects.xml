@@ -12,6 +12,11 @@
         <variable
             name="observableUser2"
             type="com.gmail.huashadow.study.databinding.viewmodel.ObservableUser2"/>
+
+        <variable
+            name="user3"
+            type="com.gmail.huashadow.study.databinding.viewmodel.ObservableFieldsUser" />
+
     </data>
 
     <LinearLayout
@@ -29,5 +34,9 @@
             android:layout_height="wrap_content"
             android:text="@{@string/name_format(observableUser2.firstName, observableUser2.lastName)}"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/name_format(user3.firstName, user3.lastName)}"/>
     </LinearLayout>
 </layout>
