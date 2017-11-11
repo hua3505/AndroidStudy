@@ -13,6 +13,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@{user0.firstName}"/>
+        android:text="@{@string/name_format(user0.firstName, user0.lastName)}"/>
 
 </layout>
