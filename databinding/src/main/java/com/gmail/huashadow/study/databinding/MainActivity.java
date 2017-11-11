@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
             put("Method Reference Activity", MethodReferenceActivity.class);
             put("Include Activity", IncludeActivity.class);
             put("Collections Activity", CollectionsActivity.class);
+            put("Data Objects", DataObjectsActivity.class);
         }
     };
 

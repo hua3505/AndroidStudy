@@ -26,7 +26,9 @@
         </activity>
         <activity android:name=".IncludeActivity">
         </activity>
-        <activity android:name=".CollectionsActivity" />
+        <activity android:name=".CollectionsActivity"/>
+        <activity android:name=".DataObjectsActivity">
+        </activity>
     </application>
 
 </manifest>
