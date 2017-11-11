@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
         {
             put("First Demo Activity", FirstDemoActivity.class);
             put("Method Reference Activity", MethodReferenceActivity.class);
+            put("Collections Activity", CollectionsActivity.class);
         }
     };
 

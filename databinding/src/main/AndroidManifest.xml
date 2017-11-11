@@ -26,6 +26,7 @@
         </activity>
         <activity android:name=".IncludeActivity">
         </activity>
+        <activity android:name=".CollectionsActivity" />
     </application>
 
 </manifest>
