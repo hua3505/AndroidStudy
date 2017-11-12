@@ -29,6 +29,7 @@
         <activity android:name=".CollectionsActivity"/>
         <activity android:name=".DataObjectsActivity">
         </activity>
+        <activity android:name=".RecyclerViewActivity" />
     </application>
 
 </manifest>

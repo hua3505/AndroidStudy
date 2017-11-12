@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
             put("Include", IncludeActivity.class);
             put("Collections", CollectionsActivity.class);
             put("Data Objects", DataObjectsActivity.class);
+            put("Recycler View", RecyclerViewActivity.class);
         }
     };
 

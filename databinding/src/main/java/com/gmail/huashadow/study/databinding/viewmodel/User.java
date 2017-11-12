@@ -24,6 +24,11 @@ public class User {
         return mFirstName;
     }
 
+    // user.firstName，优先找getFirstName()，然后是firstName()，然后是firstName成员变量
+    public String firstName() {
+        return "firstName()";
+    }
+
     public String getLastName() {
         return mLastName;
     }
@@ -41,7 +46,6 @@ public class User {
     }
 
     public void setAdult(boolean adult) {
-
         mIsAdult = adult;
     }
 }
