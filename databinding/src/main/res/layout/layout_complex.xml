@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.gmail.huashadow.study.databinding.viewmodel.User"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_test_include"
+            app:user0="@{user}"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_hah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/layout_test_include"
+                app:user0="@{user}"
+                />
+
+            <include
+                layout="@layout/layout_test_include"
+                app:user0="@{user}"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_hah2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

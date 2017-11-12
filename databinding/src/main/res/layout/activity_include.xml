@@ -19,6 +19,11 @@
             app:user0="@{user}"
             />
 
+        <include
+            layout="@layout/layout_test_include"
+            app:user0="@{user}"
+            />
+
     </LinearLayout>
 
 </layout>
