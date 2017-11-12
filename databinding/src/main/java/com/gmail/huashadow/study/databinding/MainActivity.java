@@ -10,16 +10,17 @@ import com.gmail.huashadow.study.databinding.databinding.ItemActivityStartButton
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+
 public class MainActivity extends Activity {
 
     private ButtonHandler mHandler = new ButtonHandler();
 
     private final Map<String, Class> mButtonInfos = new LinkedHashMap<String, Class>() {
         {
-            put("First Demo Activity", FirstDemoActivity.class);
-            put("Method Reference Activity", MethodReferenceActivity.class);
-            put("Include Activity", IncludeActivity.class);
-            put("Collections Activity", CollectionsActivity.class);
+            put("First Demo", FirstDemoActivity.class);
+            put("Method Reference", MethodReferenceActivity.class);
+            put("Include", IncludeActivity.class);
+            put("Collections", CollectionsActivity.class);
             put("Data Objects", DataObjectsActivity.class);
         }
     };

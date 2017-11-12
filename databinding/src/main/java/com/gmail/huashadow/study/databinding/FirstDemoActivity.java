@@ -27,7 +27,7 @@ public class FirstDemoActivity extends Activity {
         binding.getRoot().postDelayed(new Runnable() {
             @Override
             public void run() {
-                binding.setUser(new User("Hello", "World"));
+                binding.setUser(new User("Test", "World"));
             }
         }, 3000);
     }
