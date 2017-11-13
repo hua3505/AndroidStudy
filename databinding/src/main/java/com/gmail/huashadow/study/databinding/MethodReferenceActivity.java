@@ -21,6 +21,7 @@ public class MethodReferenceActivity extends Activity {
 
 
     public class MyHandlers {
+        // 签名必须与onClickListener中的onClick方法相同
         public void onClickFriend(View view) {
             int count = mBinding.getCount();
             mBinding.setCount(++count);

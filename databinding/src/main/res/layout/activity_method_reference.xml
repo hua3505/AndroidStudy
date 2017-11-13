@@ -18,11 +18,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--使用 :: 或者 . 都可以-->
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{String.valueOf(count)}"
             android:onClick="@{handler::onClickFriend}"/>
+
+
 
     </LinearLayout>
 

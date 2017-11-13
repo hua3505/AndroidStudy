@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--在最外层加上layout标签，就表示这个布局使用data binding-->
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android">
 

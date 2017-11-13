@@ -7,7 +7,6 @@ package com.gmail.huashadow.study.databinding.viewmodel;
 public class User {
     private String mFirstName;
     private String mLastName;
-
     private boolean mIsAdult;
 
     public User(String firstName, String lastName) {
