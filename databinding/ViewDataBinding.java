@@ -352,6 +352,7 @@ public abstract class ViewDataBinding extends BaseObservable {
         if (mContainingBinding == null) {
             executeBindingsInternal();
         } else {
+            // 如果是include，调用上一层的binding对象的executePendingBindings
             mContainingBinding.executePendingBindings();
         }
     }
