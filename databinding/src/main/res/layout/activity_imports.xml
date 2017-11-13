@@ -8,6 +8,9 @@
         <import type="android.view.View" />
         <import type="android.text.TextUtils" />
         <import type="com.gmail.huashadow.study.databinding.viewmodel.User"/>
+        <!-- alias 可以指定别名，主要用于有同名类时 -->
+        <import type="com.gmail.huashadow.study.databinding.viewmodel.ObservableUser"
+            alias="User2"/>
         <variable
             name="user"
             type="User" />
