@@ -18,18 +18,18 @@ public class FirstDemoActivity extends Activity {
         binding.setUser(user);
 
 
-//        binding.getRoot().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                // 界面不会改变
-//                binding.getUser().setFirstName("Hello");
-//            }
-//        }, 1000);
-//        binding.getRoot().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                binding.setUser(new User("Test", "World"));
-//            }
-//        }, 3000);
+        binding.getRoot().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // 界面不会改变
+                binding.getUser().setFirstName("Hello");
+            }
+        }, 1000);
+        binding.getRoot().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                binding.setUser(new User("Test", "World"));
+            }
+        }, 3000);
     }
 }

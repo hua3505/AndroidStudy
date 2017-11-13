@@ -2,6 +2,7 @@ package com.gmail.huashadow.study.databinding;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
@@ -74,6 +75,23 @@ public class RecyclerViewActivity extends Activity {
 
         public void setUser(User user) {
             mBinding.setUser(user);
+            mBinding.setVariable(BR.user, user);
+            mBinding.executePendingBindings();
+        }
+    }
+
+    private static class ItemViewHodler extends RecyclerView.ViewHolder {
+
+        private ViewDataBinding mBinding;
+
+        public ItemViewHodler(ViewDataBinding binding) {
+            super(binding.getRoot());
+            mBinding = binding;
+        }
+
+        public void setUser(User user) {
+            // 模型是通用的，但有不同类型的布局，所以不知道binding具体类型。
+            mBinding.setVariable(BR.user, user);
             mBinding.executePendingBindings();
         }
     }
