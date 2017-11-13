@@ -2,15 +2,18 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+    <!--生成类 包名.databinding.CustomBinding-->
     <!--<data class="CustomBinding">-->
 
     <!--</data>-->
 
+    <!--生成类 包名.CustomBinding-->
     <!--<data class=".CustomBinding">-->
 
     <!--</data>-->
 
-    <data class="com.CustomBinding">
+    <!--生成类 com.ximalaya.ting.CustomBinding"-->
+    <data class="com.ximalaya.ting.CustomBinding">
 
     </data>
 
