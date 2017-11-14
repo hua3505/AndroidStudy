@@ -75,7 +75,7 @@ public class RecyclerViewActivity extends Activity {
 
         public void setUser(User user) {
             mBinding.setUser(user);
-            mBinding.setVariable(BR.user, user);
+//            mBinding.setVariable(BR.user, user);
             mBinding.executePendingBindings();
         }
     }
